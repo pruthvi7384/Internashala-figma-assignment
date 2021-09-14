@@ -1,0 +1,324 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+}
+:root{
+    --color:#1F2E35CC;
+    --color1:#FFFFFF;
+    --color2:#EE4248;
+    --color3:#1F2E35;
+    --color4:#30444E;
+    --background-color:#F7F7F7;
+}
+
+/* ==========Global Classes============== */
+    ul{
+        list-style-type: none;
+    }
+    a{
+        text-decoration: none;
+    }
+    .container{
+        width: 100%;
+    }
+    .col-2{
+        flex-basis: 50%;
+        margin:10px;
+    }
+    .d-flex{
+        display:flex;
+    }
+    .btn{
+        padding:10px 20px;
+        border: none;
+        outline: none;
+        background-color:var(--color2);
+        color: var(--color1);
+        border-radius:5px;
+        cursor: pointer;
+    }
+/* ========X==Global Classes==X============ */
+
+/* ==========Navigation Bar============== */
+    .navbar{
+        padding:30px;
+        box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
+    }
+    .navbar nav .toggle{
+        position:absolute;
+        top: 20px;
+        right:20px;
+        font-size:22px;
+        color:var(--color3);
+        display:none;
+    }
+    .navbar nav{
+        justify-content:space-around;
+        align-items:center;
+    }
+    .navbar nav .nav-menu ul li, .navbar nav .nav-icon ul li{
+        margin:0px 20px;
+    }
+    .navbar nav .nav-menu ul li a, .navbar nav .nav-icon ul li a{
+        color: var(--color);
+        font-size:18px;
+    }
+    .navbar nav .nav-menu ul li a span i{
+        color: var(--color);
+        font-size:16px;
+    }
+/* ========X==Navigation Bar==X============ */
+
+/* ==========Heros Section============== */
+    .herros-section{
+        padding:50px 100px;
+    }
+    .herros-section h1{
+        color: var(--color3);
+        font-weight:700;
+        line-height: 133.69%;
+    }
+    .herros-section .d-flex{
+        align-items: center;
+    }
+    .herros-section h1 span{
+        color: var(--color2);
+    }
+    .herros-section p {
+        margin-top:20px;
+        color: var(--color4);
+        line-height: 29px;
+    }
+    .herros-section img{
+        width: 100%;
+        padding:20px;
+        object-fit: contain;
+    }
+    .herros-section .button-herro{
+        margin-top:20px;
+    }
+/* ========X==Heros Section==X============ */
+
+/* ==========Info Section============== */
+    .info-banner{
+        background-color: var(--background-color);
+        padding:0px 100px 20px 100px;
+    }
+    .info-banner img{
+        width: 100%;
+        padding:20px;
+        object-fit: contain;
+    }
+    .info-banner .d-flex{
+        align-items: center;
+    }
+    .info-banner h1{
+        color: var(--color3);
+        line-height: 133.69%;
+        font-weight: 500;
+    }
+    .info-banner h1 span{
+        color: var(--color2);
+    }
+    .info-banner p{
+        margin-top: 20px;
+        line-height: 150%;
+        color: var(--color4);
+    }
+    .info-banner p span{
+        color: var(--color2);
+        font-weight:500;
+    }
+/* ========X==Info Section==X============ */
+    
+/* ==========Product and Services Section============== */
+    .product-section{
+        padding:100px 100px 0px 100px;
+    }
+    .heading h2{
+        text-align:center;
+        color:var(--color3);
+        font-weight:700;
+    }
+    .product-section .product-row{
+        justify-content: space-evenly;
+        margin-top:20px;
+    }
+    .product-section .product-row .product-card{
+        padding:10px 20px;
+    }
+    .product-section .product-row .product-card .card-image img{
+        object-fit:contain;
+    }
+    .product-section .product-row .product-card .card-body{
+        padding:10px 0px;
+    }
+    .product-section .product-row .product-card .card-body h2{
+        color:var(--color2);
+        font-weight:500;
+        line-height: 133.69%;
+    }
+    .product-section .product-row .product-card .card-body p{
+        color:var(--color4);
+        margin: 10px 0px;
+        line-height: 150%;
+    }
+/* ========X==Product and Services Section==X============ */
+
+/* ==========Mobile Specialist Section============== */
+    .mokbile-section{
+        padding: 50px 100px 20px 100px;
+    }
+    .mokbile-section .row-mobile{
+        margin-top: 30px;
+        overflow-x: scroll;
+        scroll-behavior: smooth;
+    }
+    .mokbile-section .row-mobile::-webkit-scrollbar{
+        display:none;
+    }
+    .mokbile-section .row-mobile .card{
+        width:200px;
+        margin:20px;
+        padding:20px;
+        box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.15);
+        border-radius: 8px;
+        text-align:center;
+    }     
+    .mokbile-section .row-mobile .card .card-image{
+        width:160px;
+    }  
+    .mokbile-section .row-mobile .card .card-image img{
+        width:100px;
+        border-radius:50%;
+        object-fit: contain;
+    }
+    .mokbile-section .row-mobile .card .card-body{
+        margin-top:10px;
+    }
+    .mokbile-section .row-mobile .card .card-body h4{
+        color:var(--color2);
+    }   
+    .mokbile-section .row-mobile .card .card-body h3{
+        color:var(--color);
+        margin:4px 0px;
+    }  
+    .mokbile-section .row-mobile .card .card-body ul{
+        justify-content:space-evenly;
+        margin:8px 0px;
+    }   
+    .mokbile-section .row-mobile .card .card-body ul li a i{
+        color:var(--color2);
+        box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.15);
+        padding:5px;
+        border-radius:50%;
+    }   
+/* ========X==Mobile Specialist Section==X============ */
+
+/* ==========Footer Section============== */
+    .footer{
+        padding: 10px 100px 10px 100px;
+    }
+    .footer .footer-row{
+        align-items: center;
+        justify-content:space-around;
+    }
+    .footer .footer-row .footer-info{
+        padding: 20px;
+    }
+    .footer .footer-row .footer-info h3,.footer .footer-row .footer-contact h2{
+        margin:4px 0px;
+        color: var(--color);
+        font-weight: 500;
+    }
+    .footer .footer-row .footer-contact ul{
+        margin:10px 0px 0px 0px;
+    }
+    .footer .footer-row .footer-contact ul li {
+        margin:4px 0px;
+        color: var(--color);
+        line-height: 149.19%;
+    }
+    .footer .footer-row .footer-info h5{
+        margin:4px 0px;
+        color: var(--color4);
+        font-weight:normal;
+        line-height: 149.19%;
+    }
+    .footer .footer-row .footer-brands{
+        padding: 20px;
+    }
+    .footer .footer-row .footer-brands ul{
+        justify-content:space-around;
+        flex-wrap: wrap;
+    }
+    .footer .footer-row .footer-brands ul li{
+        margin:5px;
+    }
+/* ========X==Footer Section==X============ */
+
+/* ==========Copyright Section============== */
+    .copyright{
+        margin-top:20px;
+        padding: 10px;
+        background-color: var(--color2);
+        text-align: center;
+    }
+    .copyright p{
+        color: var(--color1);
+    }
+/* ========X==Copyright Section==X============ */
+
+/* ==========Responsive Ness====== */
+    @media(max-width:992px){
+        .navbar{
+            box-shadow: none;
+        }
+        .navbar nav .toggle{
+            display:initial;
+        }
+        .navbar nav{
+           flex-direction: column;
+        }
+        .navbar nav .nav-menu ul{
+            flex-direction: column;
+            text-align:center;
+        }
+        .navbar nav .nav-menu ul li{
+            margin-top: 10px;
+        }
+        .navbar nav .nav-icon ul{
+            margin-top: 20PX;
+        }
+        .collapas{
+            display: none;
+        }
+        .collapas-show{
+            display:initial;
+        }
+        .herros-section .d-flex ,.info-banner .d-flex{
+            flex-direction:column;
+        }
+        .product-section .product-row{
+            flex-direction:column;
+            justify-content:center;
+            align-items:center;
+            text-align:center;
+        }
+        .footer .footer-row{
+            flex-direction:column;
+            justify-content:center;
+            align-items:center;
+            text-align:center;
+        }
+    }
+    @media(max-width:500px){
+        .herros-section,.info-banner,.product-section,.mokbile-section,.footer{
+            padding:20px 20px;
+        }
+    }
+/* =======X==Responsive Ness==X==== */
